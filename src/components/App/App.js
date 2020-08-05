@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SearchBar from 'E:/andra-codes/hungry/src/components/SearchBar';
+import BusinessList from 'src\components\BusinessList\BusinessList';
+
 
 function App() {
   return (
