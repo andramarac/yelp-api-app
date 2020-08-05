@@ -7,7 +7,7 @@ const sortByOptions = {
     'Most Reviewed': 'review_count'
 };
 
-class searchBar extends React.Component {
+class SearchBar extends React.Component {
     renderSortbyOptions() {
         return Object.keys(sortByOptions).map(sortByOption => {
             let sortByOptionValue = sortByOptions[sortByOption];
@@ -28,7 +28,7 @@ class searchBar extends React.Component {
                 <input placeholder="Where?" />
             </div>
              <div className="SearchBar-submit">
-                <a>Let's Go</a>
+                <a href="www.#.com">Let's Go</a>
             </div>
             </div>
         )

@@ -1,29 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import SearchBar from '.components/SearchBar/SearchBar';
-import BusinessList from 'src\components\BusinessList\BusinessList';
+import SearchBar from '../SearchBar/SearchBar';
+import BusinessList from '../BusinessList/BusinessList';
 
 
-function App() {
-  return (
-    <div class="App">
-      <header class="App-header">
-        <img src={logo} class="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          class="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>hungry</h1>
+          <SearchBar />
+          <BusinessList />
+      </div>
+    );
+  }
 }
 
 export default App;
